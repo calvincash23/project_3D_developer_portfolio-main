@@ -1,4 +1,4 @@
-import logo from "./logo.svg";
+import logo from "./logo.png";
 import backend from "./backend.png";
 import creator from "./creator.png";
 import mobile from "./mobile.png";
@@ -20,12 +20,6 @@ import githublogo from "./tech/githublogo.png";
 import python from "./tech/python.png";
 import rest from "./tech/rest.png";
 import unity from "./tech/unity.png"
-
-
-import meta from "./company/meta.png";
-import shopify from "./company/shopify.png";
-import starbucks from "./company/starbucks.png";
-import tesla from "./company/tesla.png";
 import qvex from "./company/qvex.png";
 import RBC from "./company/RBC.png";
 
