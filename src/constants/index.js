@@ -24,6 +24,7 @@ import {
 } from "../assets";
 
 import bruce from "../assets/headshots/bruce.jpg";
+import chris from "../assets/headshots/chris.jpg";
 
 export const navLinks = [
   {
@@ -169,11 +170,11 @@ const testimonials = [
   },
   {
     testimonial:
-      "Calvin Birch has been an exceptional co-op student at RBC, demonstrating remarkable growth and contributions during his second year with our team. He has played a pivotal role in advancing our GenAI application, by developing production-ready web services, enhancing technical debt, and significantly improving code coverage. Calvin's willingness to assist in various areas, collaborative spirit, and ability to work independently have made him an invaluable asset. Calvin's eagerness to learn, adapt, and deliver high-quality results has earned him our appreciation and respect. We would enthusiastically welcome Calvin back for future co-op terms, and we highly recommend him to any organization seeking a talented, dedicated, and team-oriented individual.",
+      "Calvin Birch has been an exceptional co-op student at RBC, demonstrating remarkable growth and contributions during his second year with our team. He has played a pivotal role in advancing our GenAI application, by developing production-ready web services, enhancing technical debt, and significantly improving code coverage. \n\n Calvin's willingness to assist in various areas, collaborative spirit, and ability to work independently have made him an invaluable asset. Calvin's eagerness to learn, adapt, and deliver high-quality results has earned him our appreciation and respect. We would enthusiastically welcome Calvin back for future co-op terms, and we highly recommend him to any organization seeking a talented, dedicated, and team-oriented individual.",
     name: "Chris Kao",
     designation: "Director, Integration Development, and GenAI Contact Centre Technology",
     company: "RBC",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
+    image: chris,
   },
   {
     testimonial:
