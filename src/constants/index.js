@@ -23,6 +23,8 @@ import {
   tripguide,
 } from "../assets";
 
+import bruce from "../assets/headshots/bruce.jpg";
+
 export const navLinks = [
   {
     id: "about",
@@ -122,7 +124,10 @@ const experiences = [
     iconBg: "#005daa",
     date: "May 2024 - Augest 2024",
     points: [
-      "Fill in at end of term!"
+      "Spearheaded the development of a new LLM endpoint for RBC’s GENAI app BART, reducing call time by an average of 15 seconds, resulting in an estimated savings of $1M annually. ",
+      "Adapted and updated the endpoint to align with dynamic business needs, ensuring continuous alignment with organizational needs.",
+      "Gained knowledge of the Helios production pipeline, including updating Rook checks for multiple applications.",
+      "Successfully orangized and led the migration of over 10 applications, ensuring we met the deadline one month before the due date.",
     ],
   },
   {
@@ -132,11 +137,10 @@ const experiences = [
     iconBg: "#ffffff",
     date: "Oct 2022 - May 2024",
     points: [
-      "laced top 16 in 2023 VexU world championships.",
+      "Placed top 16 in 2023 VexU world championships.",
       "Lead the subsystem controller and website team",
       "Created learning modules about subsystems and state-machines for new team members.",
       "Directed the design and execution of the team’s website",
-      "Used ultrasonic and hue sensors to detect changes of color."
     ],
   },
   {
@@ -157,27 +161,27 @@ const experiences = [
 const testimonials = [
   {
     testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
+      "We were pleased to have Calvin join our CCT development team during the COOP term. Initially, he helped migrate applications from Nexus to Artifactory, easing the workload for our team focused on urgent priorities. Calvin then shifted to our GenAI team, where he quickly adapted to hands-on coding and demonstrated a strong desire to contribute and grow. His ability to swiftly incorporate feedback from senior developers was impressive. Calvin's passion for IT is evident, and I wish him continued success, whether at RBC or elsewhere.",
+    name: "Bruce Emberly",
+    designation: "Director, Application Development & Support - Advisor Enablement, Contact Centre Technology",
+    company: "RBC",
+    image: bruce,
   },
   {
     testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
+      "Calvin Birch has been an exceptional co-op student at RBC, demonstrating remarkable growth and contributions during his second year with our team. He has played a pivotal role in advancing our GenAI application, by developing production-ready web services, enhancing technical debt, and significantly improving code coverage. Calvin's willingness to assist in various areas, collaborative spirit, and ability to work independently have made him an invaluable asset. Calvin's eagerness to learn, adapt, and deliver high-quality results has earned him our appreciation and respect. We would enthusiastically welcome Calvin back for future co-op terms, and we highly recommend him to any organization seeking a talented, dedicated, and team-oriented individual.",
+    name: "Chris Kao",
+    designation: "Director, Integration Development, and GenAI Contact Centre Technology",
+    company: "RBC",
     image: "https://randomuser.me/api/portraits/men/5.jpg",
   },
   {
     testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
+      "Calvin's exceptional skills and dedication have consistently made a positive impact on our team. Calvin combines technical expertise with strong leadership, showing a commitment to excellence in every project they undertake. Their ability to collaborate effectively and drive results is truly impressive. I am confident that Calvin will continue to achieve great success in their future endeavors.",
+    name: "Michael Cassidy",
+    designation: "VP",
+    company: "Queen's Vex Robotics",
+    image: "https://media.licdn.com/dms/image/v2/C4E03AQG1yheNaNTm4g/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1663898197384?e=1729728000&v=beta&t=GAtv5ojLA4fYODvgW3pHOjn7KTaZrFlkZTYxlO0xrtk",
   },
 ];
 
