@@ -5,19 +5,17 @@ import { Unity, useUnityContext } from "react-unity-webgl";
 import { styles } from "../styles";
 import { github } from "../assets";
 import { SectionWrapper } from "../hoc";
-import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
-
-import { SwordCanvas } from "./canvas";
 
 const Works = () => {
   const unityContainerRef = useRef(null);
   const { unityProvider } = new useUnityContext({
-    loaderUrl: "src/assets/unity_build/WebGL Builds.loader.js",
-    dataUrl: "src/assets/unity_build/WebGL Builds.data.br",
-    frameworkUrl: "src/assets/unity_build/WebGL Builds.framework.js.br",
-    codeUrl: "src/assets/unity_build/WebGL Builds.wasm.br",
+    loaderUrl: "/unityBuild/WebGLBuilds.loader.js",
+    dataUrl: "/unityBuild/WebGLBuilds.data.br",
+    frameworkUrl: "/unityBuild/WebGLBuilds.framework.js.br",
+    codeUrl: "/unityBuild/WebGLBuilds.wasm.br",
   });
+  
 
   const handleFullscreen = () => {
     if (unityContainerRef.current) {
@@ -58,10 +56,6 @@ const Works = () => {
         >
           Fullscreen
         </button>
-      </div>
-      <div></div>
-      <div>
-       {/*<SwordCanvas />*/}
       </div>
     </>
   );

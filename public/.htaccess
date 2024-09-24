@@ -1,0 +1,16 @@
+<IfModule mod_headers.c>
+  <FilesMatch "\.js\.br$">
+    Header set Content-Encoding br
+    Header set Content-Type application/javascript
+  </FilesMatch>
+
+  <FilesMatch "\.wasm\.br$">
+    Header set Content-Encoding br
+    Header set Content-Type application/wasm
+  </FilesMatch>
+
+  <FilesMatch "\.css\.br$">
+    Header set Content-Encoding br
+    Header set Content-Type text/css
+  </FilesMatch>
+</IfModule>

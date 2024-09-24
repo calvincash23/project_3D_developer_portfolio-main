@@ -23,11 +23,6 @@ import unity from "./tech/unity.png"
 import qvex from "./company/qvex.png";
 import RBC from "./company/RBC.png";
 
-
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
-
 export {
   logo,
   backend,
@@ -50,9 +45,6 @@ export {
   unity,
   csharp,
   python,
-  carrent,
-  jobit,
-  tripguide,
   qvex,
   RBC,
 };

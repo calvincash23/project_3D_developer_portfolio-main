@@ -43,7 +43,7 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className="mt-4 text-secondary text-[17px]  leading-[30px]"
       >
-        &nbsp; &nbsp; Passionate software and game developer with a knack for creating creative ideas and innovative solutions. 
+        Passionate software and game developer with a knack for creating creative ideas and innovative solutions. 
         Currently a third year Computer Science student at Queen's University. I have completed two summer internships at RBC as a student developer and was a programmer for the international ranked Vex Robotics team at my University. 
         <br/><br/>
         Currently I am exploring my passion for game design. Feel free to explore my projects and connect with me via my contact section. :)
