@@ -22,6 +22,7 @@ import {
 
 import bruce from "../assets/headshots/bruce.jpg";
 import chris from "../assets/headshots/chris.jpg";
+import michael from "../assets/headshots/michael.jpg";
 
 export const navLinks = [
   {
@@ -116,13 +117,28 @@ const technologies = [
 
 const experiences = [
   {
+    title: "Student Developer (12 months)",
+    company_name: "RBC",
+    icon: RBC,
+    iconBg: "#005daa",
+    date: "May 2025 - April 2026",
+    points: [
+      "Led an internal AI prompt-building and experimentation platform in Python/Streamlit, enabling rapid creation and refinement of complex LLM prompts.",
+      "Delivered 80% efficiency gains, reducing workflows from 4 weeks to 5-6 days by converting manual prompt-creation and validation processes into automated, background processes.",
+      "Built a robust data processing pipeline for transcript synthesis, automating un-redaction, French translation, and anonymization workflows.",
+      "Implemented an interactive prompt evaluation dashboard supporting multi-model, multi-prompt comparisons with automated accuracy scoring, visualizations (pie charts), and Excel export.",
+      "Created secure API integration with token management, batch processing and multithreading to ensure a fast and reliable results",
+      "Created a scheduled weekly accuracy-evaluation cron job to continuously validate all production prompts and surface regressions."
+    ],
+  },
+  {
     title: "Student Developer",
     company_name: "RBC",
     icon: RBC,
     iconBg: "#005daa",
     date: "May 2024 - Augest 2024",
     points: [
-      "Spearheaded the development of a new LLM endpoint for RBC’s GENAI app BART, reducing call time by an average of 15 seconds, resulting in an estimated savings of $1M annually. ",
+      "Spearheaded the development of a new LLM endpoint for RBC’s GENAI app BART, reducing call time by an average of 15 seconds, resulting in an estimated savings of $150,000 annually. ",
       "Adapted and updated the endpoint to align with dynamic business needs, ensuring continuous alignment with organizational needs.",
       "Gained knowledge of the Helios production pipeline, including updating Rook checks for multiple applications.",
       "Successfully orangized and led the migration of over 10 applications, ensuring we met the deadline one month before the due date.",
@@ -179,7 +195,7 @@ const testimonials = [
     name: "Michael Cassidy",
     designation: "VP",
     company: "Queen's Vex Robotics",
-    image: "https://media.licdn.com/dms/image/v2/C4E03AQG1yheNaNTm4g/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1663898197384?e=1729728000&v=beta&t=GAtv5ojLA4fYODvgW3pHOjn7KTaZrFlkZTYxlO0xrtk",
+    image: michael,
   },
 ];
 

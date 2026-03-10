@@ -1,37 +1,14 @@
-import React, { useRef } from "react";
+import React from "react";
 import { motion } from "framer-motion";
-import { Unity, useUnityContext } from "react-unity-webgl";
 
 import { styles } from "../styles";
 import { github } from "../assets";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
 
+import itch from "../assets/headshots/itch.png";
+
 const Works = () => {
-  const unityContainerRef = useRef(null);
-  const { unityProvider } = new useUnityContext({
-    loaderUrl: "/unityBuild/WebGLBuilds.loader.js",
-    dataUrl: "/unityBuild/WebGLBuilds.data.br",
-    frameworkUrl: "/unityBuild/WebGLBuilds.framework.js.br",
-    codeUrl: "/unityBuild/WebGLBuilds.wasm.br",
-  });
-  
-
-  const handleFullscreen = () => {
-    if (unityContainerRef.current) {
-      const unityElement = unityContainerRef.current.querySelector('canvas');
-      if (unityElement.requestFullscreen) {
-        unityElement.requestFullscreen();
-      } else if (unityElement.mozRequestFullScreen) { // Firefox
-        unityElement.mozRequestFullScreen();
-      } else if (unityElement.webkitRequestFullscreen) { // Chrome, Safari and Opera
-        unityElement.webkitRequestFullscreen();
-      } else if (unityElement.msRequestFullscreen) { // IE/Edge
-        unityElement.msRequestFullscreen();
-      }
-    }
-  };
-
   return (
     <>
       <motion.div variants={textVariant()}>
@@ -40,22 +17,23 @@ const Works = () => {
       </motion.div>
 
       <div>
-        <h3 className="text-[#915EFF] font-black md:text-[35px] sm:text-[50px] xs:text-[40px] text-[30px]" style={{ paddingLeft: '20px' }}>Path Weaver</h3>
+        <h3 className="text-[#915EFF] font-black md:text-[35px] sm:text-[50px] xs:text-[40px] text-[30px]" style={{ paddingLeft: '20px' }}></h3>
       </div>
 
-      <div className="flex justify-center">
-        <div ref={unityContainerRef}>
-          <Unity unityProvider={unityProvider} style={{ width: 1000, height: 600 }} />
-        </div>
-      </div>
-
-      <div className="flex justify-center mt-4">
-        <button 
-          onClick={handleFullscreen}
-          className="px-4 py-2 bg-blue-500 text-white rounded"
+      <div className="flex flex-col items-center">
+        <a
+          href="https://calvincash23.itch.io/"
+          target="_blank"
+          rel="noopener noreferrer"
         >
-          Fullscreen
-        </button>
+          <img
+            src={itch}
+            alt="Path Weaver — Play on itch.io"
+            className="max-w-full h-auto rounded shadow-lg"
+          />
+        </a>
+
+        <p className="mt-3 text-sm text-white-100">Click the image to see the projects on itch.io</p>
       </div>
     </>
   );
